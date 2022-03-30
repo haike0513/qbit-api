@@ -25,6 +25,6 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       run: yarn
 
-    - name: Build
+    - name: Build And Publish Tag
       run: |
-        yarn run build
+        yarn run build:tag
