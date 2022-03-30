@@ -12,7 +12,7 @@
   "name": "@qbitapi/sdk-core",
   "type": "module",
   "types": "index.d.ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.cjs",
   "module": "index.js",
   "dependencies": {

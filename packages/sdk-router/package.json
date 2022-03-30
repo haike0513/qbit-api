@@ -12,11 +12,11 @@
   "name": "@qbitapi/sdk-router",
   "type": "module",
   "types": "index.d.ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.cjs",
   "module": "index.js",
   "dependencies": {
-    "@qbitapi/sdk-core": "0.0.4",
+    "@qbitapi/sdk-core": "0.0.5",
     "jsbi": "^4.2.0"
   }
 }
