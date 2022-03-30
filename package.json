@@ -1,6 +1,6 @@
 {
-  "name": "@qbit/sdk",
-  "version": "0.0.1",
+  "name": "@qbitapi/sdk",
+  "version": "0.0.2",
   "description": "",
   "main": "index.cjs",
   "type": "commonjs",

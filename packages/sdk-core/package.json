@@ -1,6 +1,6 @@
 {
   "author": "zenlink",
-  "description": "@qbit/sdk-core",
+  "description": "@qbitapi/sdk-core",
   "exports": {
     ".": {
       "types": "./index.d.ts",
@@ -9,10 +9,10 @@
     }
   },
   "license": "ISC",
-  "name": "@qbit/sdk-core",
+  "name": "@qbitapi/sdk-core",
   "type": "module",
   "types": "index.d.ts",
-  "version": "0.0.11",
+  "version": "0.0.2",
   "main": "index.cjs",
   "module": "index.js",
   "dependencies": {

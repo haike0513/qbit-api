@@ -1,0 +1,30 @@
+name: Build Tag
+
+on:
+  push:
+    tags:        
+      - v**
+
+env:
+  NODE_VERSION: '16.14.0'
+
+jobs:
+  Build-tag:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v2
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'yarn'
+
+    - name: Install dependencies
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      run: yarn
+
+    - name: Build
+      run: |
+        yarn run build

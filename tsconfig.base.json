@@ -3,12 +3,12 @@
   "compilerOptions": {
     "composite": true,
     "paths": {
-      "@qbit/sdk-core": ["sdk-core/src"],
-      "@qbit/sdk-core/*": ["sdk-core/src/*"],
-      "@qbit/sdk-router": ["sdk-router/src"],
-      "@qbit/sdk-router/*": ["sdk-router/src/*"],
-      "@qbit/sdk-api": ["sdk-api/src"],
-      "@qbit/sdk-api/*": ["sdk-api/src/*"],
+      "@qbitapi/sdk-core": ["sdk-core/src"],
+      "@qbitapi/sdk-core/*": ["sdk-core/src/*"],
+      "@qbitapi/sdk-router": ["sdk-router/src"],
+      "@qbitapi/sdk-router/*": ["sdk-router/src/*"],
+      "@qbitapi/sdk-api": ["sdk-api/src"],
+      "@qbitapi/sdk-api/*": ["sdk-api/src/*"],
     },
     "resolveJsonModule": true,
     "esModuleInterop": true,
