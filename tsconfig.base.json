@@ -1,0 +1,17 @@
+{
+  "extends": "@polkadot/dev/config/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "paths": {
+      "@qbit/sdk-core": ["sdk-core/src"],
+      "@qbit/sdk-core/*": ["sdk-core/src/*"],
+      "@qbit/sdk-router": ["sdk-router/src"],
+      "@qbit/sdk-router/*": ["sdk-router/src/*"],
+      "@qbit/sdk-api": ["sdk-api/src"],
+      "@qbit/sdk-api/*": ["sdk-api/src/*"],
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+ }
