@@ -19,12 +19,16 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'yarn'
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
     - name: Install dependencies
       env:
-        NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       run: yarn
 
     - name: Build And Publish Tag
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       run: |
         yarn run build:tag
