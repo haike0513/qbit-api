@@ -29,13 +29,13 @@ function npmGetVersion () {
 }
 
 function npmSetup () {
-  if(!process.env.NPM_TOKEN) {
+  if(!process.env.NODE_AUTH_TOKEN) {
     
     console.log('There is no env NPM_TOKEN, will be use default');
     return;
   };
   const registry = 'registry.npmjs.org';
-  fs.writeFileSync(path.join(os.homedir(), '.npmrc'), `//${registry}/:_authToken=${process.env.NPM_TOKEN}`);
+  fs.writeFileSync(path.join(os.homedir(), '.npmrc'), `//${registry}/:_authToken=${process.env.NODE_AUTH_TOKEN}`);
 }
 
 function npmPublish () {

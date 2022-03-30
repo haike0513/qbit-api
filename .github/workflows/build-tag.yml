@@ -18,17 +18,9 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: ${{ env.NODE_VERSION }}
+        registry-url: https://registry.npmjs.org/
         cache: 'yarn'
+    - run: yarn install
+    - run: yarn run build:tag
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
-    - name: Install dependencies
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      run: yarn
-
-    - name: Build And Publish Tag
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      run: |
-        yarn run build:tag
